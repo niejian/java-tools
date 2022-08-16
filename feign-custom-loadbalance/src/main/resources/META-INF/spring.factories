@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.com.code4fun.tools.sc.FeignLoadBalanceRuleSelectorAutoConfig
