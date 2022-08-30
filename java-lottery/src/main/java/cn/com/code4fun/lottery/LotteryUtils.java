@@ -3,6 +3,7 @@ package cn.com.code4fun.lottery;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.*;
 
 public class LotteryUtils {
     private static final Random random = new Random();
@@ -72,7 +73,7 @@ public class LotteryUtils {
     }
 
     public static void main(String[] args) {
-        List<LotteryItem> lotteryItemList = new ArrayList<LotteryItem>();
+        List<LotteryItem> lotteryItemList = new ArrayList<>();
         LotteryItem awardItem1 = new LotteryItem();
         awardItem1.setAwardName("红包10元");
         awardItem1.setAwardProbability(0.025D);
@@ -101,19 +102,43 @@ public class LotteryUtils {
             System.out.println(item.getAwardName()+" 中奖数字范围：["+item.getAwardStartCode()+","+item.getAwardEndCode()+"]");
         }
         System.out.println("以下是模拟的抽奖中奖结果：");
-        for (int i = 0; i < 100; i++) {
-            LotteryItem award1 = LotteryUtils.beginLottery(lottery, lotteryItemList);
-            System.out.println("抽中的数字是："+award1.getAwardCode()+",恭喜中奖："+award1.getAwardName()+",数字落点["+award1.getAwardStartCode()+","+award1.getAwardEndCode()+"]");
+        ExecutorService executorService = new ThreadPoolExecutor(160, 320, 10,
+                TimeUnit.SECONDS, new LinkedBlockingQueue<>(10240), new ThreadPoolExecutor.DiscardPolicy());
+        CompletableFuture<Void> completableFuture = new CompletableFuture<>();
+        for (int i = 0; i < 10000; i++) {
+            DoLottery doLottery = new DoLottery(lottery, lotteryItemList);
+            executorService.execute(doLottery);
+
+//            LotteryItem award1 = LotteryUtils.beginLottery(lottery, lotteryItemList);
+//            System.out.println("抽中的数字是："+award1.getAwardCode()+",恭喜中奖："+award1.getAwardName()+",数字落点["+award1.getAwardStartCode()+","+award1.getAwardEndCode()+"]");
 
         }
-//        LotteryItem award1 = LotteryUtils.beginLottery(lottery, lotteryItemList);
-//        System.out.println("抽中的数字是："+award1.getAwardCode()+",恭喜中奖："+award1.getAwardName()+",数字落点["+award1.getAwardStartCode()+","+award1.getAwardEndCode()+"]");
-//        LotteryItem award2 = LotteryUtils.beginLottery(lottery, lotteryItemList);
-//        System.out.println("抽中的数字是："+award2.getAwardCode()+",恭喜中奖："+award2.getAwardName()+",数字落点["+award2.getAwardStartCode()+","+award2.getAwardEndCode()+"]");
-//        LotteryItem award3 = LotteryUtils.beginLottery(lottery, lotteryItemList);
-//        System.out.println("抽中的数字是："+award3.getAwardCode()+",恭喜中奖："+award3.getAwardName()+",数字落点["+award3.getAwardStartCode()+","+award3.getAwardEndCode()+"]");
-//        LotteryItem award4 = LotteryUtils.beginLottery(lottery, lotteryItemList);
-//        System.out.println("抽中的数字是："+award4.getAwardCode()+",恭喜中奖："+award4.getAwardName()+",数字落点["+award4.getAwardStartCode()+","+award4.getAwardEndCode()+"]");
+
+        System.out.println("===============>线程运行结束");
+        executorService.shutdown();
+    }
+
+    static class DoLottery implements Runnable {
+
+        private Lottery lottery;
+        List<LotteryItem> lotteryItemList;
+
+        public DoLottery(Lottery lottery, List<LotteryItem> lotteryItemList) {
+            this.lottery = lottery;
+            this.lotteryItemList = lotteryItemList;
+        }
+
+        @Override
+        public void run() {
+            LotteryItem award1 = LotteryUtils.beginLottery(this.lottery, this.lotteryItemList);
+
+
+            System.out.println("当前线程：[" + Thread.currentThread().getName() +  "]抽中的数字是："+award1.getAwardCode()+",恭喜中奖："+award1.getAwardName()+",数字落点["+award1.getAwardStartCode()+","+award1.getAwardEndCode()+"]");
+
+
+        }
     }
 
 }
+
+
