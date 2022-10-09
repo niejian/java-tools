@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option java_package = "cn.com.code4fun.proto.dto";
+//option java_outer_classname = "PersonDto";
+
+message PersonDto {
+    int32 id = 1;
+    string name = 2;
+    string email = 3;
+    Sex sex = 4;
+    repeated PhoneNumber phone_numbers = 5;
+    map<string, string > tags = 6;
+
+
+    enum Sex {
+        DEFAULT = 0;
+        Male = 1;
+        Female = 2;
+    }
+
+    message PhoneNumber {
+        string number = 1;
+        PhoneType phone_type = 2;
+
+        enum PhoneType {
+            Mobile = 0;
+            Home = 1;
+            Work = 2;
+        }
+
+    }
+}
