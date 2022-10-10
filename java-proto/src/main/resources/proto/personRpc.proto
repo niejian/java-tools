@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_package = "cn.com.code4fun.proto.service";
+option java_outer_classname = "PersonRpcService";
+option java_multiple_files = true;
+
+// 定义包名
+package cn.com.code4fun.proto.service;
+
+import "person.proto";
+
+// 定义入参
+message QueryPersonByUsernameRequest {
+    string username = 1;
+}
+
+// 定义出参
+message PersonResponse {
+    cn.com.code4fun.proto.dto.PersonDto person_dto = 1;
+}
+
+service PersonService {
+    rpc getPersonByUsername(QueryPersonByUsernameRequest) returns (PersonResponse);
+}

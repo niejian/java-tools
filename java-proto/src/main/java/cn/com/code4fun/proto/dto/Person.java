@@ -15,7 +15,7 @@ public final class Person {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface PersonDtoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:PersonDto)
+      // @@protoc_insertion_point(interface_extends:cn.com.code4fun.proto.dto.PersonDto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -49,36 +49,36 @@ public final class Person {
         getEmailBytes();
 
     /**
-     * <code>.PersonDto.Sex sex = 4;</code>
+     * <code>.cn.com.code4fun.proto.dto.PersonDto.Sex sex = 4;</code>
      * @return The enum numeric value on the wire for sex.
      */
     int getSexValue();
     /**
-     * <code>.PersonDto.Sex sex = 4;</code>
+     * <code>.cn.com.code4fun.proto.dto.PersonDto.Sex sex = 4;</code>
      * @return The sex.
      */
     cn.com.code4fun.proto.dto.Person.PersonDto.Sex getSex();
 
     /**
-     * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+     * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
      */
     java.util.List<cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber> 
         getPhoneNumbersList();
     /**
-     * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+     * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
      */
     cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber getPhoneNumbers(int index);
     /**
-     * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+     * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
      */
     int getPhoneNumbersCount();
     /**
-     * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+     * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
      */
     java.util.List<? extends cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumberOrBuilder> 
         getPhoneNumbersOrBuilderList();
     /**
-     * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+     * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
      */
     cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumberOrBuilder getPhoneNumbersOrBuilder(
         int index);
@@ -120,11 +120,11 @@ java.lang.String defaultValue);
         java.lang.String key);
   }
   /**
-   * Protobuf type {@code PersonDto}
+   * Protobuf type {@code cn.com.code4fun.proto.dto.PersonDto}
    */
   public static final class PersonDto extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:PersonDto)
+      // @@protoc_insertion_point(message_implements:cn.com.code4fun.proto.dto.PersonDto)
       PersonDtoOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use PersonDto.newBuilder() to construct.
@@ -152,7 +152,7 @@ java.lang.String defaultValue);
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_descriptor;
+      return cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
@@ -170,13 +170,13 @@ java.lang.String defaultValue);
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_fieldAccessorTable
+      return cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               cn.com.code4fun.proto.dto.Person.PersonDto.class, cn.com.code4fun.proto.dto.Person.PersonDto.Builder.class);
     }
 
     /**
-     * Protobuf enum {@code PersonDto.Sex}
+     * Protobuf enum {@code cn.com.code4fun.proto.dto.PersonDto.Sex}
      */
     public enum Sex
         implements com.google.protobuf.ProtocolMessageEnum {
@@ -289,11 +289,11 @@ java.lang.String defaultValue);
         this.value = value;
       }
 
-      // @@protoc_insertion_point(enum_scope:PersonDto.Sex)
+      // @@protoc_insertion_point(enum_scope:cn.com.code4fun.proto.dto.PersonDto.Sex)
     }
 
     public interface PhoneNumberOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:PersonDto.PhoneNumber)
+        // @@protoc_insertion_point(interface_extends:cn.com.code4fun.proto.dto.PersonDto.PhoneNumber)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -309,22 +309,22 @@ java.lang.String defaultValue);
           getNumberBytes();
 
       /**
-       * <code>.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
+       * <code>.cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
        * @return The enum numeric value on the wire for phoneType.
        */
       int getPhoneTypeValue();
       /**
-       * <code>.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
+       * <code>.cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
        * @return The phoneType.
        */
       cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.PhoneType getPhoneType();
     }
     /**
-     * Protobuf type {@code PersonDto.PhoneNumber}
+     * Protobuf type {@code cn.com.code4fun.proto.dto.PersonDto.PhoneNumber}
      */
     public static final class PhoneNumber extends
         com.google.protobuf.GeneratedMessageV3 implements
-        // @@protoc_insertion_point(message_implements:PersonDto.PhoneNumber)
+        // @@protoc_insertion_point(message_implements:cn.com.code4fun.proto.dto.PersonDto.PhoneNumber)
         PhoneNumberOrBuilder {
     private static final long serialVersionUID = 0L;
       // Use PhoneNumber.newBuilder() to construct.
@@ -350,19 +350,19 @@ java.lang.String defaultValue);
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_PhoneNumber_descriptor;
+        return cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_PhoneNumber_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_PhoneNumber_fieldAccessorTable
+        return cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_PhoneNumber_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.class, cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.Builder.class);
       }
 
       /**
-       * Protobuf enum {@code PersonDto.PhoneNumber.PhoneType}
+       * Protobuf enum {@code cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType}
        */
       public enum PhoneType
           implements com.google.protobuf.ProtocolMessageEnum {
@@ -475,7 +475,7 @@ java.lang.String defaultValue);
           this.value = value;
         }
 
-        // @@protoc_insertion_point(enum_scope:PersonDto.PhoneNumber.PhoneType)
+        // @@protoc_insertion_point(enum_scope:cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType)
       }
 
       public static final int NUMBER_FIELD_NUMBER = 1;
@@ -519,14 +519,14 @@ java.lang.String defaultValue);
       public static final int PHONE_TYPE_FIELD_NUMBER = 2;
       private int phoneType_;
       /**
-       * <code>.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
+       * <code>.cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
        * @return The enum numeric value on the wire for phoneType.
        */
       @java.lang.Override public int getPhoneTypeValue() {
         return phoneType_;
       }
       /**
-       * <code>.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
+       * <code>.cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
        * @return The phoneType.
        */
       @java.lang.Override public cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.PhoneType getPhoneType() {
@@ -700,21 +700,21 @@ java.lang.String defaultValue);
         return builder;
       }
       /**
-       * Protobuf type {@code PersonDto.PhoneNumber}
+       * Protobuf type {@code cn.com.code4fun.proto.dto.PersonDto.PhoneNumber}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:PersonDto.PhoneNumber)
+          // @@protoc_insertion_point(builder_implements:cn.com.code4fun.proto.dto.PersonDto.PhoneNumber)
           cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumberOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_PhoneNumber_descriptor;
+          return cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_PhoneNumber_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_PhoneNumber_fieldAccessorTable
+          return cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_PhoneNumber_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
                   cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.class, cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.Builder.class);
         }
@@ -742,7 +742,7 @@ java.lang.String defaultValue);
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_PhoneNumber_descriptor;
+          return cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_PhoneNumber_descriptor;
         }
 
         @java.lang.Override
@@ -949,14 +949,14 @@ java.lang.String defaultValue);
 
         private int phoneType_ = 0;
         /**
-         * <code>.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
+         * <code>.cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
          * @return The enum numeric value on the wire for phoneType.
          */
         @java.lang.Override public int getPhoneTypeValue() {
           return phoneType_;
         }
         /**
-         * <code>.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
+         * <code>.cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
          * @param value The enum numeric value on the wire for phoneType to set.
          * @return This builder for chaining.
          */
@@ -967,7 +967,7 @@ java.lang.String defaultValue);
           return this;
         }
         /**
-         * <code>.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
+         * <code>.cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
          * @return The phoneType.
          */
         @java.lang.Override
@@ -977,7 +977,7 @@ java.lang.String defaultValue);
           return result == null ? cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.PhoneType.UNRECOGNIZED : result;
         }
         /**
-         * <code>.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
+         * <code>.cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
          * @param value The phoneType to set.
          * @return This builder for chaining.
          */
@@ -991,7 +991,7 @@ java.lang.String defaultValue);
           return this;
         }
         /**
-         * <code>.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
+         * <code>.cn.com.code4fun.proto.dto.PersonDto.PhoneNumber.PhoneType phone_type = 2;</code>
          * @return This builder for chaining.
          */
         public Builder clearPhoneType() {
@@ -1013,10 +1013,10 @@ java.lang.String defaultValue);
         }
 
 
-        // @@protoc_insertion_point(builder_scope:PersonDto.PhoneNumber)
+        // @@protoc_insertion_point(builder_scope:cn.com.code4fun.proto.dto.PersonDto.PhoneNumber)
       }
 
-      // @@protoc_insertion_point(class_scope:PersonDto.PhoneNumber)
+      // @@protoc_insertion_point(class_scope:cn.com.code4fun.proto.dto.PersonDto.PhoneNumber)
       private static final cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber DEFAULT_INSTANCE;
       static {
         DEFAULT_INSTANCE = new cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber();
@@ -1154,14 +1154,14 @@ java.lang.String defaultValue);
     public static final int SEX_FIELD_NUMBER = 4;
     private int sex_;
     /**
-     * <code>.PersonDto.Sex sex = 4;</code>
+     * <code>.cn.com.code4fun.proto.dto.PersonDto.Sex sex = 4;</code>
      * @return The enum numeric value on the wire for sex.
      */
     @java.lang.Override public int getSexValue() {
       return sex_;
     }
     /**
-     * <code>.PersonDto.Sex sex = 4;</code>
+     * <code>.cn.com.code4fun.proto.dto.PersonDto.Sex sex = 4;</code>
      * @return The sex.
      */
     @java.lang.Override public cn.com.code4fun.proto.dto.Person.PersonDto.Sex getSex() {
@@ -1173,14 +1173,14 @@ java.lang.String defaultValue);
     public static final int PHONE_NUMBERS_FIELD_NUMBER = 5;
     private java.util.List<cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber> phoneNumbers_;
     /**
-     * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+     * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
      */
     @java.lang.Override
     public java.util.List<cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber> getPhoneNumbersList() {
       return phoneNumbers_;
     }
     /**
-     * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+     * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumberOrBuilder> 
@@ -1188,21 +1188,21 @@ java.lang.String defaultValue);
       return phoneNumbers_;
     }
     /**
-     * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+     * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
      */
     @java.lang.Override
     public int getPhoneNumbersCount() {
       return phoneNumbers_.size();
     }
     /**
-     * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+     * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
      */
     @java.lang.Override
     public cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber getPhoneNumbers(int index) {
       return phoneNumbers_.get(index);
     }
     /**
-     * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+     * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
      */
     @java.lang.Override
     public cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumberOrBuilder getPhoneNumbersOrBuilder(
@@ -1216,7 +1216,7 @@ java.lang.String defaultValue);
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_TagsEntry_descriptor, 
+                  cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_TagsEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
@@ -1512,15 +1512,15 @@ java.lang.String defaultValue);
       return builder;
     }
     /**
-     * Protobuf type {@code PersonDto}
+     * Protobuf type {@code cn.com.code4fun.proto.dto.PersonDto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:PersonDto)
+        // @@protoc_insertion_point(builder_implements:cn.com.code4fun.proto.dto.PersonDto)
         cn.com.code4fun.proto.dto.Person.PersonDtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_descriptor;
+        return cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
@@ -1548,7 +1548,7 @@ java.lang.String defaultValue);
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_fieldAccessorTable
+        return cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 cn.com.code4fun.proto.dto.Person.PersonDto.class, cn.com.code4fun.proto.dto.Person.PersonDto.Builder.class);
       }
@@ -1588,7 +1588,7 @@ java.lang.String defaultValue);
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return cn.com.code4fun.proto.dto.Person.internal_static_PersonDto_descriptor;
+        return cn.com.code4fun.proto.dto.Person.internal_static_cn_com_code4fun_proto_dto_PersonDto_descriptor;
       }
 
       @java.lang.Override
@@ -1983,14 +1983,14 @@ java.lang.String defaultValue);
 
       private int sex_ = 0;
       /**
-       * <code>.PersonDto.Sex sex = 4;</code>
+       * <code>.cn.com.code4fun.proto.dto.PersonDto.Sex sex = 4;</code>
        * @return The enum numeric value on the wire for sex.
        */
       @java.lang.Override public int getSexValue() {
         return sex_;
       }
       /**
-       * <code>.PersonDto.Sex sex = 4;</code>
+       * <code>.cn.com.code4fun.proto.dto.PersonDto.Sex sex = 4;</code>
        * @param value The enum numeric value on the wire for sex to set.
        * @return This builder for chaining.
        */
@@ -2001,7 +2001,7 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>.PersonDto.Sex sex = 4;</code>
+       * <code>.cn.com.code4fun.proto.dto.PersonDto.Sex sex = 4;</code>
        * @return The sex.
        */
       @java.lang.Override
@@ -2011,7 +2011,7 @@ java.lang.String defaultValue);
         return result == null ? cn.com.code4fun.proto.dto.Person.PersonDto.Sex.UNRECOGNIZED : result;
       }
       /**
-       * <code>.PersonDto.Sex sex = 4;</code>
+       * <code>.cn.com.code4fun.proto.dto.PersonDto.Sex sex = 4;</code>
        * @param value The sex to set.
        * @return This builder for chaining.
        */
@@ -2025,7 +2025,7 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>.PersonDto.Sex sex = 4;</code>
+       * <code>.cn.com.code4fun.proto.dto.PersonDto.Sex sex = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearSex() {
@@ -2048,7 +2048,7 @@ java.lang.String defaultValue);
           cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber, cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.Builder, cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumberOrBuilder> phoneNumbersBuilder_;
 
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public java.util.List<cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber> getPhoneNumbersList() {
         if (phoneNumbersBuilder_ == null) {
@@ -2058,7 +2058,7 @@ java.lang.String defaultValue);
         }
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public int getPhoneNumbersCount() {
         if (phoneNumbersBuilder_ == null) {
@@ -2068,7 +2068,7 @@ java.lang.String defaultValue);
         }
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber getPhoneNumbers(int index) {
         if (phoneNumbersBuilder_ == null) {
@@ -2078,7 +2078,7 @@ java.lang.String defaultValue);
         }
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public Builder setPhoneNumbers(
           int index, cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber value) {
@@ -2095,7 +2095,7 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public Builder setPhoneNumbers(
           int index, cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.Builder builderForValue) {
@@ -2109,7 +2109,7 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public Builder addPhoneNumbers(cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber value) {
         if (phoneNumbersBuilder_ == null) {
@@ -2125,7 +2125,7 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public Builder addPhoneNumbers(
           int index, cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber value) {
@@ -2142,7 +2142,7 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public Builder addPhoneNumbers(
           cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.Builder builderForValue) {
@@ -2156,7 +2156,7 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public Builder addPhoneNumbers(
           int index, cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.Builder builderForValue) {
@@ -2170,7 +2170,7 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public Builder addAllPhoneNumbers(
           java.lang.Iterable<? extends cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber> values) {
@@ -2185,7 +2185,7 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public Builder clearPhoneNumbers() {
         if (phoneNumbersBuilder_ == null) {
@@ -2198,7 +2198,7 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public Builder removePhoneNumbers(int index) {
         if (phoneNumbersBuilder_ == null) {
@@ -2211,14 +2211,14 @@ java.lang.String defaultValue);
         return this;
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.Builder getPhoneNumbersBuilder(
           int index) {
         return getPhoneNumbersFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumberOrBuilder getPhoneNumbersOrBuilder(
           int index) {
@@ -2228,7 +2228,7 @@ java.lang.String defaultValue);
         }
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public java.util.List<? extends cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumberOrBuilder> 
            getPhoneNumbersOrBuilderList() {
@@ -2239,14 +2239,14 @@ java.lang.String defaultValue);
         }
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.Builder addPhoneNumbersBuilder() {
         return getPhoneNumbersFieldBuilder().addBuilder(
             cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.getDefaultInstance());
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.Builder addPhoneNumbersBuilder(
           int index) {
@@ -2254,7 +2254,7 @@ java.lang.String defaultValue);
             index, cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.getDefaultInstance());
       }
       /**
-       * <code>repeated .PersonDto.PhoneNumber phone_numbers = 5;</code>
+       * <code>repeated .cn.com.code4fun.proto.dto.PersonDto.PhoneNumber phone_numbers = 5;</code>
        */
       public java.util.List<cn.com.code4fun.proto.dto.Person.PersonDto.PhoneNumber.Builder> 
            getPhoneNumbersBuilderList() {
@@ -2418,10 +2418,10 @@ java.lang.String defaultValue);
       }
 
 
-      // @@protoc_insertion_point(builder_scope:PersonDto)
+      // @@protoc_insertion_point(builder_scope:cn.com.code4fun.proto.dto.PersonDto)
     }
 
-    // @@protoc_insertion_point(class_scope:PersonDto)
+    // @@protoc_insertion_point(class_scope:cn.com.code4fun.proto.dto.PersonDto)
     private static final cn.com.code4fun.proto.dto.Person.PersonDto DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new cn.com.code4fun.proto.dto.Person.PersonDto();
@@ -2470,20 +2470,20 @@ java.lang.String defaultValue);
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PersonDto_descriptor;
+    internal_static_cn_com_code4fun_proto_dto_PersonDto_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PersonDto_fieldAccessorTable;
+      internal_static_cn_com_code4fun_proto_dto_PersonDto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PersonDto_TagsEntry_descriptor;
+    internal_static_cn_com_code4fun_proto_dto_PersonDto_TagsEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PersonDto_TagsEntry_fieldAccessorTable;
+      internal_static_cn_com_code4fun_proto_dto_PersonDto_TagsEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_PersonDto_PhoneNumber_descriptor;
+    internal_static_cn_com_code4fun_proto_dto_PersonDto_PhoneNumber_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_PersonDto_PhoneNumber_fieldAccessorTable;
+      internal_static_cn_com_code4fun_proto_dto_PersonDto_PhoneNumber_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2493,39 +2493,43 @@ java.lang.String defaultValue);
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014person.proto\"\376\002\n\tPersonDto\022\n\n\002id\030\001 \001(\005" +
-      "\022\014\n\004name\030\002 \001(\t\022\r\n\005email\030\003 \001(\t\022\033\n\003sex\030\004 \001" +
-      "(\0162\016.PersonDto.Sex\022-\n\rphone_numbers\030\005 \003(" +
-      "\0132\026.PersonDto.PhoneNumber\022\"\n\004tags\030\006 \003(\0132" +
-      "\024.PersonDto.TagsEntry\032+\n\tTagsEntry\022\013\n\003ke" +
-      "y\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032\200\001\n\013PhoneNumb" +
-      "er\022\016\n\006number\030\001 \001(\t\0224\n\nphone_type\030\002 \001(\0162 " +
-      ".PersonDto.PhoneNumber.PhoneType\"+\n\tPhon" +
-      "eType\022\n\n\006Mobile\020\000\022\010\n\004Home\020\001\022\010\n\004Work\020\002\"(\n" +
-      "\003Sex\022\013\n\007DEFAULT\020\000\022\010\n\004Male\020\001\022\n\n\006Female\020\002B" +
-      "\033\n\031cn.com.code4fun.proto.dtob\006proto3"
+      "\n\014person.proto\022\031cn.com.code4fun.proto.dt" +
+      "o\"\346\003\n\tPersonDto\022\n\n\002id\030\001 \001(\005\022\014\n\004name\030\002 \001(" +
+      "\t\022\r\n\005email\030\003 \001(\t\0225\n\003sex\030\004 \001(\0162(.cn.com.c" +
+      "ode4fun.proto.dto.PersonDto.Sex\022G\n\rphone" +
+      "_numbers\030\005 \003(\01320.cn.com.code4fun.proto.d" +
+      "to.PersonDto.PhoneNumber\022<\n\004tags\030\006 \003(\0132." +
+      ".cn.com.code4fun.proto.dto.PersonDto.Tag" +
+      "sEntry\032+\n\tTagsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005valu" +
+      "e\030\002 \001(\t:\0028\001\032\232\001\n\013PhoneNumber\022\016\n\006number\030\001 " +
+      "\001(\t\022N\n\nphone_type\030\002 \001(\0162:.cn.com.code4fu" +
+      "n.proto.dto.PersonDto.PhoneNumber.PhoneT" +
+      "ype\"+\n\tPhoneType\022\n\n\006Mobile\020\000\022\010\n\004Home\020\001\022\010" +
+      "\n\004Work\020\002\"(\n\003Sex\022\013\n\007DEFAULT\020\000\022\010\n\004Male\020\001\022\n" +
+      "\n\006Female\020\002B\033\n\031cn.com.code4fun.proto.dtob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_PersonDto_descriptor =
+    internal_static_cn_com_code4fun_proto_dto_PersonDto_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_PersonDto_fieldAccessorTable = new
+    internal_static_cn_com_code4fun_proto_dto_PersonDto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PersonDto_descriptor,
+        internal_static_cn_com_code4fun_proto_dto_PersonDto_descriptor,
         new java.lang.String[] { "Id", "Name", "Email", "Sex", "PhoneNumbers", "Tags", });
-    internal_static_PersonDto_TagsEntry_descriptor =
-      internal_static_PersonDto_descriptor.getNestedTypes().get(0);
-    internal_static_PersonDto_TagsEntry_fieldAccessorTable = new
+    internal_static_cn_com_code4fun_proto_dto_PersonDto_TagsEntry_descriptor =
+      internal_static_cn_com_code4fun_proto_dto_PersonDto_descriptor.getNestedTypes().get(0);
+    internal_static_cn_com_code4fun_proto_dto_PersonDto_TagsEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PersonDto_TagsEntry_descriptor,
+        internal_static_cn_com_code4fun_proto_dto_PersonDto_TagsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_PersonDto_PhoneNumber_descriptor =
-      internal_static_PersonDto_descriptor.getNestedTypes().get(1);
-    internal_static_PersonDto_PhoneNumber_fieldAccessorTable = new
+    internal_static_cn_com_code4fun_proto_dto_PersonDto_PhoneNumber_descriptor =
+      internal_static_cn_com_code4fun_proto_dto_PersonDto_descriptor.getNestedTypes().get(1);
+    internal_static_cn_com_code4fun_proto_dto_PersonDto_PhoneNumber_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_PersonDto_PhoneNumber_descriptor,
+        internal_static_cn_com_code4fun_proto_dto_PersonDto_PhoneNumber_descriptor,
         new java.lang.String[] { "Number", "PhoneType", });
   }
 
