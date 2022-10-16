@@ -4,16 +4,19 @@ import com.netflix.loadbalancer.IRule;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 public class FeignLoadBalanceRuleSelectorAutoConfig {
-    @Autowired
-    private FeignLoadBalanceRule gateway2IstioLoadBalanceRule;
 
+    /**
+     * https://github.com/alibaba/spring-cloud-alibaba/issues/1652
+     * @return
+     */
     @Bean
-    @Primary
+    @Scope("prototype")
     public IRule getRule() {
-        return gateway2IstioLoadBalanceRule;
+        return new FeignLoadBalanceRule();
     }
 }
