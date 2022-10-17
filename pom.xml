@@ -13,6 +13,7 @@
         <module>java-download</module>
         <module>java-lottery</module>
         <module>java-proto</module>
+        <module>java-netty-learn</module>
     </modules>
     <packaging>pom</packaging>
 
